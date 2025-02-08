@@ -1,0 +1,196 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../imagens/abstract-red-black-line-crack-geometric-pattern-design-modern-background-vector.jpg);
+    
+}
+
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.navbar{
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    height: 90px;
+    background-color: darkred;
+}
+
+a{
+    border-radius: 15px;
+    padding: 20px;
+    background-color: black;
+    cursor: pointer;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+li{
+
+    margin: 200px;
+    display: inline;
+    list-style: none;
+}
+#contentSlide{
+
+    width: 75%;
+    height: 200px;
+    background: transparent;
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+#contentSlide::-webkit-scrollbar{
+    display: none;
+}
+
+#contentSlide #block{
+    cursor: pointer;
+    flex-shrink: 0;
+    display: inline-block; 
+    position: relative;
+    width: 100px;
+    height: 150px;
+    margin: 0 10px;
+    background-color: darkmagenta;
+    transition: 0.5s ease-in-out;
+
+}
+
+.carousel1{
+    margin-left: 200px;  
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#block:hover{
+    transform: scale(1.2);
+}
+
+#btn-prev{
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 0;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(58, 3, 12, 0.678);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+#btn-next{
+    color: aliceblue;
+    border-radius: 10px;
+    margin-right: 200px;
+    padding: 0;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(58, 3, 12, 0.678);
+    z-index: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+#block{
+    box-shadow: -10px 10px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+#block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.destaque{
+    display: flex;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 4px solid darkred;
+}
+
+.jogodestaque img{
+    width: 615px;
+    height: 360px;
+
+
+}
+
+.hotline {
+    width: 615px;
+    height: 360px;
+
+}
+
+.pCyberpunk{
+    word-spacing: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    color: aliceblue;
+}
+
+.pHotline{
+    word-spacing: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    display: flex;
+    color: aliceblue;
+}
+
+.containerNoticias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.noticia img{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    width: 300px;
+    height: 200px;
+}
+
+.noticia img:hover{
+    transform: scale(1.2);
+}
+
+.noticia{
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption{
+    color: aliceblue;
+}
+
+.cartaoNoticia{
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 1%;
+    background-color: rgb(43, 3, 3);
+}
